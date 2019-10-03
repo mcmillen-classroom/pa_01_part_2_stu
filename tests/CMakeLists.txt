@@ -7,9 +7,11 @@ find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
 enable_language(C ASM-ATT)
+
+set (CMAKE_CXX_FLAGS "-no-pie")
  
 # Link runTests with what we want to test and the GTest and pthread library
-add_executable(runGetDaysTests testGetDays.cpp ../src/getDays.s ../src/isLeapYear.s ../src/getFirstDayOfMonth.s)
+add_executable(runGetDaysTests testGetDays.cpp ../src/getDays.s ../src/isLeapYear.s ../src/getFirstDayOfMonth.s ../src/getNumOfDaysInMonth.s)
 add_executable(runGetDaysOfWeekTests testGetDaysOfWeek.cpp ../src/getDaysOfWeek.s)
 add_executable(runGetFirstDayOfMonthTests testGetFirstDayOfMonth.cpp ../src/getFirstDayOfMonth.s ../src/isLeapYear.s)
 add_executable(runGetMonthYearTests ../src/getMonthYear.s testGetMonthYear.cpp)
