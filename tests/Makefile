@@ -213,6 +213,7 @@ home/ubuntu/environment/pa/pa_01_part_2_stu/src/getFirstDayOfMonth.o: home/ubunt
 # target to build an object file
 home/ubuntu/environment/pa/pa_01_part_2_stu/src/getFirstDayOfMonth.s.o:
 	$(MAKE) -f CMakeFiles/runGetDaysTests.dir/build.make CMakeFiles/runGetDaysTests.dir/home/ubuntu/environment/pa/pa_01_part_2_stu/src/getFirstDayOfMonth.s.o
+	$(MAKE) -f CMakeFiles/runGetFirstDayOfMonthTests.dir/build.make CMakeFiles/runGetFirstDayOfMonthTests.dir/home/ubuntu/environment/pa/pa_01_part_2_stu/src/getFirstDayOfMonth.s.o
 .PHONY : home/ubuntu/environment/pa/pa_01_part_2_stu/src/getFirstDayOfMonth.s.o
 
 home/ubuntu/environment/pa/pa_01_part_2_stu/src/getMonthYear.o: home/ubuntu/environment/pa/pa_01_part_2_stu/src/getMonthYear.s.o
